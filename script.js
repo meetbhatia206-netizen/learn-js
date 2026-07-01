@@ -1,8 +1,9 @@
-let sel = document.querySelector("select");
-let dev = document.querySelector("#device");
+let abcd = document.querySelector("#abcd");
+abcd.addEventListener("mouseover",function(){
+  abcd.style.backgroundColor="yellow";
 
-
-sel.addEventListener("change",function(deta){
-  dev.textContent = `${deta.target.value} device selected`;
-});
+})
+abcd.addEventListener("mouseout",function(){
+  abcd.style.backgroundColor="chocolate"
+})
 
