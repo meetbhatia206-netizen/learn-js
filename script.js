@@ -1,9 +1,9 @@
-let abcd = document.querySelector("#abcd");
-abcd.addEventListener("mouseover",function(){
-  abcd.style.backgroundColor="yellow";
+let num = 10;
+let count = setInterval(function(){
+  if (num>0 ){console.log(num);
+  num--}
+  else {
+    clearInterval(count)
+  }
 
-})
-abcd.addEventListener("mouseout",function(){
-  abcd.style.backgroundColor="chocolate"
-})
-
+  } , 1000);
